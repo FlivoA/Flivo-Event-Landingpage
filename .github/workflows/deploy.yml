@@ -2,33 +2,32 @@ name: Build and push dist to deploy branch
 
 on:
   push:
-    branches: [ main ]  # Run when main updates
+    branches: [ main ]   # Trigger when pushing to main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout source
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
 
-      - run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-      - run: npm run build
+      - name: Build project
+        run: npm run build
 
-      - name: Deploy dist/ to deploy branch
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan deploy
-          git rm -rf . || true
-          cp -R dist/* .
-          git add -A
-          git commit -m "Deploy: $GITHUB_SHA"
-          git push -f https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} deploy
+      - name: Deploy to deploy branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: deploy
+          force_orphan: true
