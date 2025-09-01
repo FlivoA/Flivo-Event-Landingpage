@@ -48,7 +48,7 @@ const Torronto = () => {
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[110px] font-extrabold text-white/80 leading-tight tracking-tight">
-            Toronto
+            Torronto
           </h1>
 
           {/* Subtitle */}
