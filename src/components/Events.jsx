@@ -560,7 +560,7 @@ const Events = () => {
             />
             <EventCard
               bgImage="/boston.jpg"
-              title="Beyond Automation: Intelligent AI Agent"
+              title="Enterprise LLM Security in the Age of AI Transformation"
               subtitle="Live in Toronto, Montreal, Beijing, Berlin & Bengaluru—this global tour explores how intelligent AI agents are redefining enterprise strategy beyond automation."
               cardArray={cardInfo3}
             />
