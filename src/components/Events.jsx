@@ -147,7 +147,7 @@ const EventCard = ({ bgImage, title, subtitle, cardArray }) => {
 
   return (
     <div
-      className="relative w-full rounded-lg overflow-hidden shadow-lg mb-8 transition-all duration-500"
+      className="relative w-full overflow-hidden border-1 border-white shadow-lg mb-8 transition-all duration-500"
       style={{
         backgroundImage: `url(${cardArray[activeIndex]?.img || bgImage})`,
         backgroundSize: "cover",
@@ -172,7 +172,7 @@ const EventCard = ({ bgImage, title, subtitle, cardArray }) => {
         {/* Location & Description + Carousel Wrapper */}
         <div className="flex flex-col md:flex-row gap-6 mt-6">
           {/* Location & Description */}
-          <div className="w-full md:max-w-[525px] border px-4 backdrop-blur-sm  sm:px-6 py-4 rounded-xl">
+          <div className="w-full md:max-w-[525px] border border-gray-500 px-4 backdrop-blur-sm  sm:px-6 py-4 rounded-xl">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase bg-gradient-to-b from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent">
               {cardArray[activeIndex]?.location}
             </h3>
@@ -262,7 +262,7 @@ const Events = () => {
 
       <div className="relative z-10 flex flex-col p-4 sm:p-6 lg:p-8">
         {/* Search Bar */}
-        <div className="flex items-center gap-2 px-3 py-2 w-full sm:max-w-[300px] bg-[#0F0F0F] text-[#4B5563] rounded mb-4">
+        <div className="flex items-center gap-2 px-3 py-2 w-full sm:max-w-[300px] bg-[#0F0F0F] text-[#4B5563] border-1 border-[#4B5563] rounded mb-4">
           <img src="/glass.svg" alt="search" height={15} width={15} />
           <div className="border-l-2 border-[#4B5563] h-4" />
           <input
@@ -274,15 +274,15 @@ const Events = () => {
 
         {/* Hero Section */}
         <div
-          className="relative flex flex-col sm:flex-row items-center justify-between gap-4 px-4 py-6 sm:px-6 sm:py-4 rounded-xl overflow-hidden"
+          className="relative flex  sm:flex-row items-center justify-between gap-4 px-4 py-6 sm:px-6 sm:py-4 border-2 border-white overflow-hidden"
           style={{
             backgroundImage: "url('/mainhero.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <img src="/flivo.png" alt="Flivo Logo" className="h-14 sm:h-20" />
-          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-black text-center">
+          <img src="/flivo.png" alt="Flivo Logo" className="h-10 sm:h-20" />
+          <h1 className="text-white text-2xl sm:text-4xl md:text-5xl font-black text-center">
             FLIVO AI EVENTS
           </h1>
           <img
@@ -295,7 +295,7 @@ const Events = () => {
         </div>
 
         {/* Filters + Cards */}
-        <div className="flex flex-col md:flex-row text-white min-h-screen gap-6 py-6">
+        <div className="flex flex-col md:flex-row text-white min-h-screen  gap-6 py-6">
           {/* Sidebar Filters */}
           <aside className="hidden md:block w-1/4 bg-[#1E1E1E] max-w-[270px] max-h-[700px] rounded-xl  overflow-y-auto border">
             {/* Sidebar content same as before... */}

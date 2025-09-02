@@ -44,7 +44,7 @@ const EventsHero = () => {
 
         <button
           onClick={() => setIsOpen(true)}
-          className="mt-6 sm:mt-8 px-4 sm:px-6 py-2 sm:py-3 rounded-md bg-white text-black font-medium cursor-pointer hover:bg-gray-200 transition"
+          className="mt-6 sm:mt-8 px-4 sm:px-6 py-2 sm:py-3 rounded-md bg-white text-black font-medium cursor-pointer hover:bg-blue-400 hover:text-white transition duration-500"
         >
           Get Event Updates
         </button>
