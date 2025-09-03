@@ -5,82 +5,77 @@ import { Link } from "react-router-dom";
 const cardInfo1 = [
   {
     img: "/vegas.jpg",
-    name: "LAS VEGAS",
-    location: "Las Vegas",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    name: "Beijing",
+    location: "Beijing",
+    date: "Sep 6, 2025",
+    place: "China National Convention Center, Beijing",
+    type: "In-Person event",
   },
   {
     img: "/vegas2.jpg",
-    name: "SAN FRANCISCO",
-    location: "San Francisco",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    name: "Seattle",
+    location: "Seattle",
+    date: "Sep 6, 2025",
+    place: "Seattle Convention Center | Arch, Seattle",
+    type: "In-Person event",
   },
   {
     img: "/vegas3.jpg",
-    name: "NEW YORK",
-    location: "New York",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    name: "Montreal",
+    location: "Montreal",
+    date: "Sep 13, 2025",
+    place: "Palais des Congrès de Montréal, Montreal",
+    type: "In-Person event",
   },
   {
-    img: "/boston7.jpg",
-    name: "LONDON",
-    location: "London",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    img: "/boston3.jpg",
+    name: "Berlin",
+    location: "Berlin",
+    date: "Sep 20, 2025",
+    place: "ECC Berlin (Estrel Congress Center), Berlin",
+    type: "In-Person event",
   },
   {
     img: "/vegas5.jpg",
-    name: "DUBAI",
-    location: "Dubai",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
-  },
-  {
-    img: "/boston7.jpg",
-    name: "BOSTON",
-    location: "Boston",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    name: "Los Angeles",
+    location: "Los Angeles",
+    date: "Sep 28, 2025",
+    place: "Los Angeles Convention Center, Los Angeles",
+    type: "In-Person event",
   },
 ];
 const cardInfo2 = [
   {
     img: "/tor.jpg",
-    name: "LAS VEGAS",
-    location: "Las Vegas",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    name: "London",
+    location: "London",
+    date: "Sep 7, 2025",
+    place: "Excel London, London",
+    type: "In-Person event",
   },
   {
     img: "/tor1.jpg",
-    name: "SAN FRANCISCO",
-    location: "San Francisco",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    name: "Singapore",
+    location: "Singapore",
+    date: "Sep 14, 2025",
+    place: "Sands Expo & Convention Centre, Singapore",
+    type: "In-Person event",
   },
   {
-    img: "/tor2.jpg",
-    name: "NEW YORK",
-    location: "New York",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    img: "/boston1.jpg",
+    name: "Dubai",
+    location: "Dubai",
+    date: "Sep 21, 2025",
+    place: "Dubai World Trade Centre, Dubai",
+    type: "In-Person event",
   },
   {
     img: "/tor4.jpg",
-    name: "LONDON",
-    location: "London",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
-  },
-  {
-    img: "/vegas4.jpg",
-    name: "DUBAI",
-    location: "Dubai",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    name: "San Francisco",
+    location: "San Francisco",
+    date: "Sep 27, 2025",
+    place: "Moscone Center, San Francisco",
+    type: "In-Person event",
   },
 ];
 const cardInfo3 = [
@@ -88,37 +83,58 @@ const cardInfo3 = [
     img: "/boston.jpg",
     name: "BOSTON",
     location: "Boston",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    date: "Oct 12, 2025",
+    place: "The Westin Copley Place, Boston",
+    type: "In-Person event",
   },
 
   {
-    img: "/boston3.jpg",
-    name: "NEW YORK",
-    location: "New York",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    img: "/boston7.jpg",
+    name: "Dubai",
+    location: "Dubai",
+    date: "Oct 19, 2025",
+    place: "Dubai World Trade Centre, Dubai",
+    type: "In-Person event",
   },
   {
-    img: "/boston4.jpg",
-    name: "LONDON",
-    location: "London",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    img: "/boston3.jpg",
+    name: "Berlin",
+    location: "Berlin",
+    date: "Oct 26, 2025",
+    place: "Sprecogeld Bikini Berlin, Berlin",
+    type: "In-Person event",
   },
   {
     img: "/boston2.jpg",
-    name: "SAN FRANCISCO",
-    location: "San Francisco",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    name: "Seattle",
+    location: "Seattle",
+    date: "Nov 2, 2025",
+    place: "W Seattle, Seattle",
+    type: "In-Person event",
   },
   {
     img: "/boston5.jpg",
-    name: "DUBAI",
-    location: "Dubai",
-    description:
-      "Hosted by FlivoAI at Chicago’s McCormick Place on August 3rd, this global campaign kickoff will feature C-suite voices, enterprise AI innovators and frameworks for capturing real business impact. Whether you lead digital transformation or architect AI solutions, this is where tomorrow’s enterprise AI playbook begins.",
+    name: "Vancouver",
+    location: "Vancouver",
+    date: "Nov 9, 2025",
+    place: "BCIT Downtown Campus, Vancouver",
+    type: "In-Person event",
+  },
+  {
+    img: "/boston6.jpg",
+    name: "Tokyo",
+    location: "Tokyo",
+    date: "Nov 16, 2025",
+    place: "Tokyo International Forum, Tokyo",
+    type: "In-Person event",
+  },
+  {
+    img: "/boston3.jpg",
+    name: "Sydney",
+    location: "Sydney",
+    date: "Nov 23, 2025",
+    place: "ICC Sydney, Sydney",
+    type: "In-Person event",
   },
 ];
 
@@ -170,14 +186,30 @@ const EventCard = ({ bgImage, title, subtitle, cardArray }) => {
         </div>
 
         {/* Location & Description + Carousel Wrapper */}
-        <div className="flex flex-col md:flex-row gap-6 mt-6">
+        <div className="flex flex-col justify-between md:flex-row gap-6 mt-6">
           {/* Location & Description */}
-          <div className="w-full md:max-w-[525px] border border-gray-500 px-4 backdrop-blur-sm  sm:px-6 py-4 rounded-xl">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase bg-gradient-to-b from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent">
-              {cardArray[activeIndex]?.location}
-            </h3>
+          <div className="w-full md:max-w-[560px] border border-gray-500 px-4 backdrop-blur-sm  sm:px-6 py-4 rounded-xl">
+            <div className="flex justify-between gap-3">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase bg-gradient-to-b from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent">
+                {cardArray[activeIndex]?.location}
+              </h3>
+              <div className="flex items-center border-1 gap-2 px-4 justify-center rounded-full p-2 border-gray-500">
+                <p className="w-2 h-2 bg-[#07ACFF] rounded-full"></p>
+                <p className="bg-gradient-to-b from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent text-xl font-bold">
+                  {cardArray[activeIndex]?.type}
+                </p>
+              </div>
+            </div>
+
+            <p
+              className="font-bold text-2xl uppercase
+              bg-gradient-to-b mb-8 from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent "
+            >
+              {cardArray[activeIndex]?.date}
+            </p>
+
             <p className="mt-2 text-sm sm:text-base md:text-lg font-bold bg-gradient-to-b from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent">
-              {cardArray[activeIndex]?.description}
+              {cardArray[activeIndex]?.place}
             </p>
             <button className="mt-4 px-4 py-2 bg-white text-black rounded-md font-medium hover:bg-gray-200 transition">
               <Link to="/event">Explore Event</Link>
@@ -547,17 +579,18 @@ const Events = () => {
           {/* Event Cards */}
           <main className="flex-1 space-y-8">
             <EventCard
-              bgImage="/lasvegas.jpg"
-              title="Enterprise AI Summit 2025"
-              subtitle="A global tour across Las Vegas, SF, NYC, London, Singapore & Dubai—where AI leaders unlock the next $3T enterprise AI revolution through strategy, innovation, and real-world use cases."
-              cardArray={cardInfo1}
-            />
-            <EventCard
               bgImage="/mtorronto.jpg"
               title="Beyond Automation: Intelligent AI Agent"
               subtitle="Live in Toronto, Montreal, Beijing, Berlin & Bengaluru—this global tour explores how intelligent AI agents are redefining enterprise strategy beyond automation."
+              cardArray={cardInfo1}
+            />
+            <EventCard
+              bgImage="/lasvegas.jpg"
+              title="Enterprise AI Summit 2025 – Revealing the Untapped $3 Trillion"
+              subtitle="A global tour across Las Vegas, SF, NYC, London, Singapore & Dubai—where AI leaders unlock the next $3T enterprise AI revolution through strategy, innovation, and real-world use cases."
               cardArray={cardInfo2}
             />
+
             <EventCard
               bgImage="/boston.jpg"
               title="Enterprise LLM Security in the Age of AI Transformation"
