@@ -195,7 +195,7 @@ const EventCard = ({ bgImage, title, subtitle, cardArray }) => {
               </h3>
               <div className="flex items-center border-1 gap-2 px-4 justify-center rounded-full p-2 border-gray-500">
                 <p className="w-2 h-2 bg-[#07ACFF] rounded-full"></p>
-                <p className="bg-gradient-to-b from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent text-xl font-bold">
+                <p className="bg-gradient-to-b from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent text-sm md:text-xl font-bold">
                   {cardArray[activeIndex]?.type}
                 </p>
               </div>
