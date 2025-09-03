@@ -129,7 +129,7 @@ const cardInfo3 = [
     type: "In-Person event",
   },
   {
-    img: "/boston3.jpg",
+    img: "/vegas4.jpg",
     name: "Sydney",
     location: "Sydney",
     date: "Nov 23, 2025",
@@ -188,10 +188,26 @@ const EventCard = ({ bgImage, title, subtitle, cardArray }) => {
         {/* Location & Description + Carousel Wrapper */}
         <div className="flex flex-col justify-between md:flex-row gap-6 mt-6">
           {/* Location & Description */}
-          <div className="w-full md:max-w-[525px] border px-4 backdrop-blur-sm  sm:px-6 py-4 rounded-xl">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase bg-gradient-to-b from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent">
-              {cardArray[activeIndex]?.location}
-            </h3>
+          <div className="w-full md:max-w-[560px] border border-gray-500 px-4 backdrop-blur-sm  sm:px-6 py-4 rounded-xl">
+            <div className="flex justify-between gap-3">
+              <h3 className="text-xl sm:text-3xl md:text-4xl font-black uppercase bg-gradient-to-b from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent">
+                {cardArray[activeIndex]?.location}
+              </h3>
+              <div className="flex items-center border-1 gap-2 px-4 justify-center rounded-full p-2 border-gray-500">
+                <p className="w-2 h-2 bg-[#07ACFF] rounded-full"></p>
+                <p className="bg-gradient-to-b from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent text-sm md:text-xl font-bold">
+                  {cardArray[activeIndex]?.type}
+                </p>
+              </div>
+            </div>
+
+            <p
+              className="font-bold text-sm md:text-2xl uppercase
+              bg-gradient-to-b mb-8 from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent "
+            >
+              {cardArray[activeIndex]?.date}
+            </p>
+
             <p className="mt-2 text-sm sm:text-base md:text-lg font-bold bg-gradient-to-b from-[#F5F5F5] to-[#8F8F8F] bg-clip-text text-transparent">
               {cardArray[activeIndex]?.place}
             </p>
@@ -261,7 +277,6 @@ const EventCard = ({ bgImage, title, subtitle, cardArray }) => {
     </div>
   );
 };
-
 const Events = () => {
   const [showFilters, setShowFilters] = useState(false);
 
