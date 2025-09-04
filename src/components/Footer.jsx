@@ -54,7 +54,7 @@ export const Footer = () => {
             intelligence.
           </p>
           <div className="mt-4">
-            <a href="#" className="">
+            <a href="https://www.linkedin.com/company/flivo-ai" className="">
               <img src="/linkedin1.svg" alt="LinkedIn" className="h-10 w-10" />
             </a>
           </div>

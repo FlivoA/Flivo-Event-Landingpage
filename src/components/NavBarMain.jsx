@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // install lucide-react or use your own icons
+import { Menu, X } from "lucide-react"; 
 
 const NavBarMain = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,7 @@ const NavBarMain = () => {
   ];
 
   return (
-    <nav className="bg-[#181818] text-white px-6 py-4">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#181818] text-white px-6 py-4 shadow-md">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-2">
