@@ -3,7 +3,11 @@ import newsletterRouter from './routes/newsletterRoute';
 import dotenv from 'dotenv';
 import cors from 'cors';
 
-dotenv.config();
+if (process.env.NODE_ENV === "production") {
+    dotenv.config({path: ".env.production"});
+} else {
+    dotenv.config({path: ".env.local"});
+}
 /*console.log("[ENV DEBUG]", {
     EMAIL_HOST: process.env.EMAIL_HOST,
     EMAIL_PORT: process.env.EMAIL_PORT,
