@@ -1,5 +1,45 @@
-const Footer = () => {
-  return (
+import {useState} from "react";
+
+export const Footer = () => {
+    const [email, setEmail] = useState('');
+    const [status, setStatus] = useState('idle');
+    const [message, setMessage] = useState('');
+
+    const handleSubscribe = async (e) => {
+        e.preventDefault();
+        if (!email) return;
+
+        setStatus('loading');
+        setMessage('');
+
+        try {
+            const response = await fetch('http://192.168.0.109:5000/api/newsletter', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({email}),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setStatus('success');
+                setMessage('Thank you for subscribing! Check your inbox for confirmation.');
+                setEmail('');
+            } else {
+                setStatus('error');
+                setMessage(data.message || 'Subscription failed. Please try again.');
+            }
+        } catch (error) {
+            console.log(error);
+            setStatus('error');
+            setMessage('Network error. Please try again.');
+        }
+    };
+
+
+    return (
     <footer className="bg-black text-gray-300 px-8 py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
         {/* Logo + About */}
@@ -21,19 +61,39 @@ const Footer = () => {
         </div>
 
         {/* Newsletter */}
-        <div>
-          <h3 className="text-white font-bold mb-3">NEWSLETTER SIGNUP</h3>
-          <div className="flex flex-col gap-2">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full px-3 py-2 rounded-md bg-transparent border border-gray-500 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
-            />
-            <button className="bg-blue-500 w-1/2 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
-              Subscribe
-            </button>
+          <div>
+              <h3 className="text-white font-bold mb-3">NEWSLETTER SIGNUP</h3>
+              <form onSubmit={handleSubscribe} className="flex flex-col gap-2">
+                  <input
+                      type="email"
+                      placeholder="Enter your email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                      className="w-full px-3 py-2 rounded-md bg-transparent border border-gray-500 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  />
+                  <button
+                      type="submit"
+                      disabled={status === 'loading'}
+                      className={`w-1/2 text-white px-4 py-2 rounded-md transition ${
+                          status === 'loading'
+                              ? 'bg-gray-400 cursor-not-allowed'
+                              : 'bg-blue-500 hover:bg-blue-600'
+                      }`}
+                  >
+                      {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
+                  </button>
+              </form>
+
+              {/* Status message */}
+              {message && (
+                  <div className={`mt-2 text-sm ${
+                      status === 'success' ? 'text-green-400' : 'text-red-400'
+                  }`}>
+                      {message}
+                  </div>
+              )}
           </div>
-        </div>
 
         {/* Event Links */}
         <div>
