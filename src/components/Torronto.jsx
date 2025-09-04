@@ -1,66 +1,7 @@
-import Footer from "./Footer";
-import Nav from "./Nav";
-import { CheckCircle2 } from "lucide-react";
-import { useState } from "react";
-import { X } from "lucide-react";
-
-const plans = [
-  {
-    title: "Standard Pass",
-    price: 100,
-    oldPrice: 199,
-    features: [
-      "Access to all keynote sessions",
-      "Networking lunch & coffee breaks",
-      "Exhibition area access",
-      "Digital content access for 30 days",
-      "Summit goodie bag",
-    ],
-    highlighted: false,
-  },
-  {
-    title: "Premium Pass",
-    price: 259,
-    oldPrice: 599,
-    features: [
-      "All Standard Pass benefits",
-      "All breakout workshops & sessions",
-      "VIP networking lunch",
-      "Reserved prime seating",
-      "Premium summit gift package",
-    ],
-    highlighted: true,
-  },
-  {
-    title: "VIP Pass",
-    price: 399,
-    oldPrice: 599,
-    features: [
-      "All Premium Pass benefits",
-      "VIP registration & concierge",
-      "Reserved VIP seating front-row",
-      "Exclusive VIP lunch with speakers",
-      "Entry to VIP Lounge",
-    ],
-    highlighted: false,
-  },
-  {
-    title: "Standard Pass",
-    price: 999,
-    oldPrice: 1499,
-    features: [
-      "All VIP Pass benefits",
-      "Private 1-on-1 consultation",
-      "Exclusive invitation to speaker dinner",
-      "Access to closed-door sessions",
-      "Lifetime access to all digital content",
-    ],
-    highlighted: false,
-  },
-];
+import Footer from "./layout/Footer";
+import Nav from "./layout/Nav";
 
 const Torronto = () => {
-  const [open, setOpen] = useState(false);
   return (
     <>
       <Nav />
@@ -92,7 +33,7 @@ const Torronto = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-20 flex flex-col items-center justify-center text-center px-4 sm:px-6 py-16 md:py-20 lg:py-28">
+        <div className="relative z-20 flex flex-col gap-8 md:gap-0 items-center justify-center text-center px-4 sm:px-6 py-16 md:py-20 lg:py-28">
           {/* Top Bar */}
           <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-5xl text-gray-200 mb-8 text-xs sm:text-sm md:text-base font-semibold gap-3 md:gap-0">
             <div className="flex sm:flex-row gap-19 sm:gap-10 md:gap-130">
@@ -446,202 +387,64 @@ const Torronto = () => {
       </section>
 
       {/* fifth */}
-      <section className="bg-black text-white py-16">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-12">
-            Get Your Pass
-          </h2>
+      <section
+        className="relative w-full bg-cover bg-center text-white flex items-center justify-center overflow-hidden"
+        style={{ backgroundImage: "url('/pngs/passbg.png')" }}
+      >
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-black/50" />
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {plans.map((plan, idx) => (
-              // OLD card
-              // <div
-              //   key={idx}
-              //   className={`relative flex flex-col rounded-2xl p-6 shadow-lg border
-              //   ${
-              //     plan.highlighted
-              //       ? "border-yellow-400 bg-black/80"
-              //       : "border-gray-700 bg-black/60"
-              //   }
-              //   hover:scale-105 transition-transform`}
-              // >
-              //   <h3 className="text-xl font-semibold mb-2">{plan.title}</h3>
-              //   <div className="mb-4">
-              //     <span className="text-3xl font-bold">${plan.price}</span>{" "}
-              //     <span className="line-through text-gray-400">
-              //       ${plan.oldPrice}
-              //     </span>
-              //   </div>
+        {/* Purple Glow Behind Devices */}
+        <div className="absolute md:left-1/3 top-190 left-50  md:top-3/5 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[550px] rounded-full bg-[#D618BF] blur-[80px] opacity-80 z-0 "></div>
 
-              //   <ul className="flex-1 space-y-3 text-sm mb-6 text-left">
-              //     {plan.features.map((feature, i) => (
-              //       <li key={i} className="flex items-start gap-2">
-              //         <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0" />
-              //         <span>{feature}</span>
-              //       </li>
-              //     ))}
-              //   </ul>
+        {/* Content Wrapper */}
+        <div className="relative z-10 flex mt-15 flex-col-reverse md:flex-col lg:flex-row items-center justify-between max-w-7xl w-full px-6 gap-12">
+          {/* Left Side - Laptop & Phone */}
+          <div className="relative flex items-end justify-center gap-10  md:gap-6">
+            {/* Laptop */}
+            <div className="relative top-2 md:w-[450px] max-w-[90vw]">
+              <img
+                src="/svgs/laptop.svg"
+                alt="Laptop"
+                className=" h-50 md:w-full md:h-auto"
+              />
+            </div>
 
-              //   <button
-              //     onClick={() => setOpen(true)}
-              //     className={`w-full py-2 rounded-xl font-medium cursor-pointer transition
-              //     ${
-              //       plan.highlighted
-              //         ? "bg-yellow-400 text-black hover:bg-yellow-300"
-              //         : "bg-blue-600 hover:bg-blue-500"
-              //     }`}
-              //   >
-              //     Register now
-              //   </button>
-              // </div>
-
-
-              // NEW card
-              <div
-                key={idx}
-                className={`relative flex flex-col rounded-2xl p-6 shadow-lg border overflow-hidden
-                ${
-                  plan.highlighted
-                    ? "border-yellow-400 bg-black/80"
-                    : "border-gray-700 bg-black/60"
-                } 
-                hover:scale-105 transition-transform`}
-              >
-                {/* Glow Effect */}
-                <div
-                  className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-[220px] h-[120px] rounded-full blur-3xl opacity-40 
-                  ${plan.highlighted ? "bg-yellow-400" : "bg-blue-500"}`}
-                />
-
-                {/* Card Content */}
-                <div className="relative z-10 ">
-                  <h3 className="text-xl font-semibold mb-2">{plan.title}</h3>
-                  <div className="mb-4">
-                    <span className="text-3xl font-bold">${plan.price}</span>{" "}
-                    <span className="line-through text-gray-400">
-                      ${plan.oldPrice}
-                    </span>
-                  </div>
-
-                  <ul className="flex-1 space-y-3 text-base mb-6 text-left ">
-                    {plan.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-1" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <button
-                    onClick={() => setOpen(true)}
-                    className={`w-1/2 py-3 border-1 border-white rounded-xl font-medium cursor-pointer transition 
-                    ${
-                      plan.highlighted
-                        ? "bg-yellow-400 text-black hover:bg-yellow-300"
-                        : "bg-blue-600 hover:bg-blue-500"
-                    }`}
-                  >
-                    Register now
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* MODAL */}
-        {open && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
-            <div className="relative w-[95%] md:w-[850px] h-[90%] md:h-[550px] bg-white rounded-2xl overflow-hidden border border-white flex gap-0.5 shadow-2xl">
-              {/* LEFT SIDE */}
-              <div
-                className="hidden md:flex flex-col justify-end items-center w-1/3 relative bg-cover bg-center text-white p-6"
-                style={{ backgroundImage: "url('/torright.png')" }}
-              >
-                <div className="absolute inset-0 bg-black/70"></div>
-                <img
-                  src="/design.svg"
-                  alt="Design"
-                  className="absolute top-10 left-13 w-24 opacity-90"
-                />
-                <div className="relative font-bold text-center mb-12">
-                  <h2 className="text-5xl">Enterprise AI Summit 2025</h2>
-                </div>
-              </div>
-
-              {/* RIGHT SIDE */}
-              <div
-                className="flex-1 relative bg-cover bg-center p-6 flex flex-col justify-center"
-                style={{ backgroundImage: "url('/speakcenter.png')" }}
-              >
-                <div className="absolute inset-0 bg-black/70" />
-
-                <div className="relative p-6 rounded-xl shadow-md">
-                  {/* Close */}
-                  <button
-                    onClick={() => setOpen(false)}
-                    className="absolute top-4 right-4 text-black hover:text-gray-600"
-                  >
-                    <X className="w-6 h-6 text-white border rounded-full p-1" />
-                  </button>
-
-                  {/* Logo */}
-                  <div className="flex justify-center mb-6">
-                    <img src="/flivo.png" alt="Flivo.ai" className="h-20" />
-                  </div>
-
-                  {/* FORM */}
-                  <form className="space-y-4">
-                    <div className="flex gap-3">
-                      <input
-                        type="text"
-                        placeholder="First Name"
-                        className="w-1/2 p-3 rounded-lg border text-black placeholder:text-gray-500 border-gray-300 focus:ring-2 bg-white focus:ring-blue-400"
-                      />
-                      <input
-                        type="text"
-                        placeholder="Last Name"
-                        className="w-1/2 p-3 rounded-lg border border-gray-300 focus:ring-2 bg-white focus:ring-blue-400 text-black placeholder:text-gray-500"
-                      />
-                    </div>
-                    <input
-                      type="email"
-                      placeholder="Work Email"
-                      className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 bg-white focus:ring-blue-400 text-black placeholder:text-gray-500"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Occupation"
-                      className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 bg-white focus:ring-blue-400 text-black placeholder:text-gray-500"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Company Name"
-                      className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 bg-white focus:ring-blue-400 text-black placeholder:text-gray-500"
-                    />
-
-                    {/* Terms */}
-                    <label className="flex items-start gap-2 text-xs text-white">
-                      <input type="checkbox" className="mt-1" />
-                      <span>
-                        I confirm that the information provided is correct and I
-                        agree to the Terms & Conditions and Privacy Policy.
-                      </span>
-                    </label>
-
-                    {/* Submit */}
-                    <button
-                      type="submit"
-                      className="w-full py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-500"
-                    >
-                      Book Your Ticket
-                    </button>
-                  </form>
-                </div>
-              </div>
+            {/* Phone */}
+            <div className="relative top-5 md:bottom-8 md:left-16 md:w-[200px] max-w-[40vw] -ml-8">
+              <img
+                src="/svgs/iphone.svg"
+                alt="Phone"
+                className="h-60 md:w-full md:h-auto"
+              />
             </div>
           </div>
-        )}
+
+          {/* Right Side - Text & Button */}
+          <div className="flex relative flex-col items-center lg:items-center text-left max-w-lg">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+              Get Your Pass
+            </h2>
+
+            <div className="border-1 rounded-2xl backdrop-blur-2xl border-gray-600 flex flex-col items-center p-3 px-9">
+              <p className="text-2xl text-center font-semibold sm:text-2xl text-white mb-6">
+                Secure your seats through Stage-X
+              </p>
+              <button className="px-6 py-1 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold text-white text-lg shadow-md transition">
+                Register now
+              </button>
+            </div>
+
+            {/* Logo */}
+            <div className="">
+              <img
+                src="/svgs/stagexlogo.svg"
+                alt="StageX Logo"
+                className="h-44"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       <Footer />

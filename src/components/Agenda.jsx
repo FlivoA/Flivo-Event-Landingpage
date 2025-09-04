@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Footer from "./layout/Footer";
+import Nav from "./layout/Nav";
 
 const scheduleData = [
   {
