@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./layout/Footer";
-import Nav from "./layout/Nav";
+import NavBeyond from "./layout/NavBeyond";
 
 const scheduleData = [
   {
@@ -126,7 +126,7 @@ const ScheduleCard = ({ item }) => {
 const Agenda = () => {
   return (
     <>
-      <Nav />
+      <NavBeyond />
 
       {/* one */}
       <section className="relative min-h-screen w-full bg-black text-white overflow-hidden pt-2">

@@ -1,5 +1,5 @@
 import Footer from "./layout/Footer";
-import Nav from "./layout/Nav";
+import NavBeyond from "./layout/NavBeyond";
 
 const sessions = [
   {
@@ -147,7 +147,7 @@ const SessionCards = () => {
 const Speakers = () => {
   return (
     <>
-      <Nav />
+      <NavBeyond />
 
       {/* one */}
       <section className="relative min-h-screen w-full bg-black text-white overflow-hidden pt-2">

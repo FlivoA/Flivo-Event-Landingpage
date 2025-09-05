@@ -212,7 +212,7 @@ const EventCard = ({ bgImage, title, subtitle, cardArray }) => {
               {cardArray[activeIndex]?.place}
             </p>
             <button className="mt-4 px-4 py-2 bg-white text-black rounded-md font-medium hover:bg-gray-200 transition">
-              <Link to="/event">Explore Event</Link>
+              <Link to="/beyond/event">Explore Event</Link>
             </button>
           </div>
 

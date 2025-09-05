@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Footer from "./layout/Footer";
-import Nav from "./layout/Nav";
+import NavBeyond from "./layout/NavBeyond";
 
 const faqs = [
   {
@@ -102,7 +102,7 @@ const FlipCard = ({ question, answer }) => {
 const FAQ = () => {
   return (
     <div>
-      <Nav />
+      <NavBeyond />
 
       {/* one */}
       <section className="relative w-full bg-black text-white overflow-hidden pt-2">

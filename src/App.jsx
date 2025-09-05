@@ -13,10 +13,10 @@ function App() {
     <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/event" element={<Torronto />} />
-        <Route path="/speaker" element={<Speakers />} />
-        <Route path="/agenda" element={<Agenda />} />
-        <Route path="/faq" element={<FAQ />} />
+        <Route path="/beyond/event" element={<Torronto />} />
+        <Route path="/beyond/speaker" element={<Speakers />} />
+        <Route path="/beyond/agenda" element={<Agenda />} />
+        <Route path="/beyond/faq" element={<FAQ />} />
       </Routes>
     </>
   )
