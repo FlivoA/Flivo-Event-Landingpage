@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Footer from "./layout/Footer";
-import NavBeyond from "./layout/NavBeyond";
+import NavAi from "./layout/NavAi";
 
 const faqs = [
   {
@@ -99,10 +99,10 @@ const FlipCard = ({ question, answer }) => {
   );
 };
 
-const FAQ = () => {
+const FAQAi = () => {
   return (
     <div>
-      <NavBeyond />
+      <NavAi />
 
       {/* one */}
       <section className="relative w-full bg-black text-white overflow-hidden pt-2">
@@ -136,7 +136,7 @@ const FAQ = () => {
           <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-5xl text-gray-200 mb-8 text-xs sm:text-sm md:text-base font-semibold gap-3 md:gap-0">
             <div className="flex sm:flex-row gap-19 sm:gap-10 md:gap-130">
               <span className="font-semibold text-base sm:text-lg md:text-2xl lg:text-3xl">
-                August 24, 2025
+                August 31, 2025
               </span>
               <span className="font-semibold text-base sm:text-lg md:text-2xl lg:text-3xl">
                 9am - 6pm GMT
@@ -151,15 +151,14 @@ const FAQ = () => {
 
           {/* Subtitle */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4 sm:mt-6 max-w-2xl sm:max-w-3xl">
-            Beyond Automation Intelligent AI Agents as Strategic Assets
+            Enterprise AI Summit 2025 Revealing Untapped $3 Trillion
           </h2>
 
           {/* Description */}
           <p className="mt-4 sm:mt-6 max-w-xl  text-xl sm:text-2xl md:text-3xl lg:text-3xl font-medium text-gray-200 md:min-w-[1200px]">
-            Join global AI leaders, architects and innovators to explore how
-            autonomous agents are reshaping enterprise decision-making. Go
-            beyond scripted automation and into systems that learn, adapt and
-            deliver lasting business value.
+            Join global tech leaders in Chicago this August as we uncover how
+            enterprise can unlock trillion-dollor opportubities with GenAI.LLMs
+            and intelligent automation
           </p>
 
           {/* CTA Button */}
@@ -185,7 +184,7 @@ const FAQ = () => {
               Frequently Asked Questions
             </p>
             <p className="font-semibold text-lg md:text-2xl max-w-[900px] mx-auto">
-              Everything you need to know before arriving in San Francisco for
+              Everything you need to know before arriving in Chicago for
               the Enterprise AI Summit 2025.
             </p>
           </div>
@@ -267,4 +266,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default FAQAi;

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // icons
 
-const Nav = () => {
+const NavAi = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -15,9 +15,9 @@ const Nav = () => {
         {/* Desktop Links */}
         <div className="hidden md:flex gap-20 font-semibold text-lg">
           <Link to="/">Home</Link>
-          <Link to="/speaker">Speakers</Link>
-          <Link to="/agenda">Agenda</Link>
-          <Link to="/faq">FAQ</Link>
+          <Link to="/ai/speaker">Speakers</Link>
+          <Link to="/ai/agenda">Agenda</Link>
+          <Link to="/ai/faq">FAQ</Link>
         </div>
 
         <div className=" hidden md:block border bg-gradient-to-r from-[#60A5FA] to-[#396294] border-white px-6 py-2 rounded shadow-xl/30 shadow-[#396294]">
@@ -39,13 +39,13 @@ const Nav = () => {
           <Link to="/" onClick={() => setIsOpen(false)}>
             Home
           </Link>
-          <Link to="/speakers" onClick={() => setIsOpen(false)}>
+          <Link to="/ai/speakers" onClick={() => setIsOpen(false)}>
             Speakers
           </Link>
-          <Link to="/agenda" onClick={() => setIsOpen(false)}>
+          <Link to="/ai/agenda" onClick={() => setIsOpen(false)}>
             Agenda
           </Link>
-          <Link to="/faq" onClick={() => setIsOpen(false)}>
+          <Link to="/ai/faq" onClick={() => setIsOpen(false)}>
             FAQ
           </Link>
           <div className=" border w-1/3 bg-gradient-to-r from-[#60A5FA] to-[#396294] border-white px-2 py-1 rounded shadow-xl/30 shadow-[#396294] text-center">
@@ -57,4 +57,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NavAi;

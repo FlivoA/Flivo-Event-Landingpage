@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./layout/Footer";
-import NavBeyond from "./layout/NavBeyond";
+import NavAi from "./layout/NavAi";
 
 const scheduleData = [
   {
@@ -123,10 +123,10 @@ const ScheduleCard = ({ item }) => {
 };
 
 
-const Agenda = () => {
+const AgendaAi = () => {
   return (
     <>
-      <NavBeyond />
+      <NavAi />
 
       {/* one */}
       <section className="relative min-h-screen w-full bg-black text-white overflow-hidden pt-2">
@@ -175,7 +175,7 @@ const Agenda = () => {
 
           {/* Subtitle */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4 sm:mt-6 max-w-2xl sm:max-w-3xl">
-            Beyond Automation Intelligent AI Agents as Strategic Assets
+            Enterprise AI Summit 2025 Revealing Untapped $3 Trillion
           </h2>
 
           {/* Description */}
@@ -226,8 +226,7 @@ const Agenda = () => {
                 An exclusive in-person event by FlivoAI
               </p>
               <p className="text-md font-semibold">
-                August 24, 2025 | Enercare Centre Convention Center, Toronto,
-                Canada
+                August 31, 2025 | McCormick Place Convention Center, Chicago
               </p>
             </div>
           </div>
@@ -255,16 +254,12 @@ const Agenda = () => {
               {/* Content */}
               <div className="relative max-w-[600px] flex flex-col mx-auto md:text-[28px] text-center md:text-start text-white">
                 <p className="mt-6 text-lg md:text-xl leading-relaxed">
-                  Explore the full-day agenda for Beyond Automation, a live
-                  gathering designed for AI leaders, digital transformation
-                  executives and innovation architects. From game-changing
-                  keynotes to deep-dive technical sessions, every moment focuses
-                  on turning intelligent agents into real enterprise value.
+                  Explore the agenda for the Enterprise AI Summit 2025,Chicago,designed for business leaders,AI experts and transformation steategists. From
+                  keynotes addesses to deep-drive workshops,every session is built around the real-world application of GenAI, LLMs and intelligent automation..
                 </p>
 
                 <p className="mt-6 font-bold text-lg md:text-xl leading-relaxed">
-                  Arrive curious. Leave with strategic clarity, peer insights
-                  and practical frameworks.
+                  This is a fully in-person event, head at athe iconic McCormick Place. Arrive ready to connect,learn and lead.
                 </p>
               </div>
             </div>
@@ -294,10 +289,10 @@ const Agenda = () => {
               {/* Bottom Text */}
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <h3 className="font-bold text-2xl text-white">
-                  Enercare Centre
+                  McCormick Place
                 </h3>
                 <p className="text-sm font-medium text-[#F8FAFC]">
-                  Convention center in Toronto, Canada
+                  Convention center chicago,llinois
                 </p>
               </div>
             </div>
@@ -316,9 +311,9 @@ const Agenda = () => {
           {/* Top */}
           <div className=" relative max-w-[398px] md:max-w-[1000px] flex flex-col items-center md:flex-row p-5 md:p-12 border-1 backdrop-blur-md gap-3 overflow-hidden rounded-xl border-white px-10">
             <p className="font-bold text-xl md:text-4xl">
-              Beyond Automation Agenda
+              Summit Agenda
             </p>
-            <p className="font-bold text-xl md:text-4xl">August 24, 2025</p>
+            <p className="font-bold text-xl md:text-4xl">August 31, 2025</p>
             <img
               src="/svgs/design.svg"
               alt="logo"
@@ -378,4 +373,4 @@ const Agenda = () => {
   );
 };
 
-export default Agenda;
+export default AgendaAi;

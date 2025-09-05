@@ -138,7 +138,7 @@ const cardInfo3 = [
   },
 ];
 
-const EventCard = ({ bgImage, title, subtitle, cardArray }) => {
+const EventCard = ({ bgImage, title, subtitle, cardArray,eventPath }) => {
   const carouselRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -212,7 +212,7 @@ const EventCard = ({ bgImage, title, subtitle, cardArray }) => {
               {cardArray[activeIndex]?.place}
             </p>
             <button className="mt-4 px-4 py-2 bg-white text-black rounded-md font-medium hover:bg-gray-200 transition">
-              <Link to="/event">Explore Event</Link>
+              <Link to={eventPath}>Explore Event</Link>
             </button>
           </div>
 
@@ -582,12 +582,15 @@ const Events = () => {
               title="Beyond Automation: Intelligent AI Agent"
               subtitle="Live in Toronto, Montreal, Beijing, Berlin & Bengaluru—this global tour explores how intelligent AI agents are redefining enterprise strategy beyond automation."
               cardArray={cardInfo1}
+              eventPath={"/beyond/event"}
             />
             <EventCard
               bgImage="/lasvegas.jpg"
               title="Enterprise AI Summit 2025 – Revealing the Untapped $3 Trillion"
               subtitle="A global tour across Las Vegas, SF, NYC, London, Singapore & Dubai—where AI leaders unlock the next $3T enterprise AI revolution through strategy, innovation, and real-world use cases."
               cardArray={cardInfo2}
+              eventPath={"/ai/event"}
+
             />
 
             <EventCard
@@ -595,6 +598,7 @@ const Events = () => {
               title="Enterprise LLM Security in the Age of AI Transformation"
               subtitle="Live in Toronto, Montreal, Beijing, Berlin & Bengaluru—this global tour explores how intelligent AI agents are redefining enterprise strategy beyond automation."
               cardArray={cardInfo3}
+              eventPath={"/beyond/event"}
             />
           </main>
         </div>

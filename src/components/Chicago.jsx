@@ -1,10 +1,10 @@
 import Footer from "./layout/Footer";
-import NavBeyond from "./layout/NavBeyond";
+import NavAi from "./layout/NavAi";
 
-const Torronto = () => {
+const Chicago = () => {
   return (
     <>
-      <NavBeyond />
+      <NavAi />
 
       {/* one */}
       <section className="relative min-h-screen w-full bg-black text-white overflow-hidden pt-2">
@@ -38,7 +38,7 @@ const Torronto = () => {
           <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-5xl text-gray-200 mb-8 text-xs sm:text-sm md:text-base font-semibold gap-3 md:gap-0">
             <div className="flex sm:flex-row gap-19 sm:gap-10 md:gap-130">
               <span className="font-semibold text-base sm:text-lg md:text-2xl lg:text-3xl">
-                August 24, 2025
+                August 31, 2025
               </span>
               <span className="font-semibold text-base sm:text-lg md:text-2xl lg:text-3xl">
                 9am - 6pm GMT
@@ -48,12 +48,12 @@ const Torronto = () => {
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[110px] font-extrabold text-white/80 leading-tight tracking-tight">
-            Toronto
+            Chicago
           </h1>
 
           {/* Subtitle */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4 sm:mt-6 max-w-2xl sm:max-w-3xl">
-            Beyond Automation Intelligent AI Agents as Strategic Assets
+            Enterprise AI Summit 2025 Revealing Untapped $3 Trillion
           </h2>
 
           {/* Description */}
@@ -99,17 +99,16 @@ const Torronto = () => {
             <div className="relative max-w-[600px] flex flex-col mx-auto md:text-[28px] text-white">
               <p className="md:text-xl">
                 <span className="font-bold">
-                  “Beyond Automation: Intelligent AI Agents as Strategic Assets”
+                  “Enterprise AI Summit 2025 Revealing Untapped $3 Trillion”
                 </span>
                 is not just another AI event, it’s a strategic briefing for
                 enterprise leaders shaping the future of intelligent systems.
               </p>
 
               <p className="mt-6 text-lg md:text-xl leading-relaxed">
-                Hosted at Toronto’s Enercare Centre Convention Center on August
-                24th, 2025, this one-day summit explores how intelligent AI
-                agents are redefining decision-making, automation and enterprise
-                value.
+                Hosted at Chicago's McCormick Place on August 31th, 2025, this
+                one-day summit explores how intelligent AI agents are redefining
+                decision-making, automation and enterprise value.
               </p>
 
               <p className="mt-6 text-lg md:text-xl leading-relaxed">
@@ -134,7 +133,7 @@ const Torronto = () => {
             {/* Image */}
             <img
               src="/pngs/enercare.png"
-              alt="Enercare Centre"
+              alt="Chicago's McCormick Place"
               className="w-full h-full object-cover"
             />
 
@@ -152,9 +151,9 @@ const Torronto = () => {
 
             {/* Bottom Text */}
             <div className="absolute bottom-0 left-0 right-0 p-4">
-              <h3 className="font-bold text-2xl text-white">Enercare Centre</h3>
+              <h3 className="font-bold text-2xl text-white">McCormick Place</h3>
               <p className="text-sm font-medium text-[#F8FAFC]">
-                Convention center in Toronto, Canada
+               Convention center chicago,llinois
               </p>
             </div>
           </div>
@@ -171,7 +170,11 @@ const Torronto = () => {
           />
           {/* Header */}
           <div className="text-center relative my-6 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16 max-w-3xl">
-            <img src="/svgs/design.svg" alt="logo" className="w-20 md:w-[130px]" />
+            <img
+              src="/svgs/design.svg"
+              alt="logo"
+              className="w-20 md:w-[130px]"
+            />
             <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold leading-snug">
               What You’ll Gain <br /> at Enterprise AI Summit 2025
             </h2>
@@ -259,11 +262,11 @@ const Torronto = () => {
             {/* Map */}
             <div className="relative w-full h-[280px] sm:h-[350px] rounded-lg overflow-hidden shadow-lg">
               <iframe
-                title="Enercare Centre Map"
+                title="Chicago's McCormick Place"
                 src={
                   "https://www.google.com/maps?q=" +
                   encodeURIComponent(
-                    "Enercare Centre 100 Princes' Blvd, Toronto, ON M6K 3C3, Canada"
+                    "Chicago's McCormick Place ,2301 S Martin Luthre King Dr,Chicago,IL 60616,United States"
                   ) +
                   "&output=embed"
                 }
@@ -276,14 +279,16 @@ const Torronto = () => {
 
             {/* Venue info + Button */}
             <div className="bg-black/80 rounded-lg px-5 py-4 flex flex-col gap-3 text-center">
-              <h3 className="text-lg font-semibold">Enercare Centre</h3>
+              <h3 className="text-lg font-semibold">
+                Chicago's McCormick Place
+              </h3>
               <p className="text-sm flex items-center justify-center gap-2 text-gray-300">
                 <img
                   src="/svgs/locationw.svg"
                   alt="location"
                   className="h-4 w-4 opacity-80"
                 />
-                #1, 100 Princes' Blvd, Toronto, ON M6K 3C3, Canada
+                2301 S Martin Luthre King Dr,Chicago,IL 60616,United States
               </p>
               <a
                 href="https://www.google.com/maps/dir/?api=1&destination=Enercare+Centre,+Toronto"
@@ -309,7 +314,7 @@ const Torronto = () => {
               src={
                 "https://www.google.com/maps?q=" +
                 encodeURIComponent(
-                  "Enercare Centre 100 Princes' Blvd, Toronto, ON M6K 3C3, Canada"
+                  "Chicago's McCormick Place ,2301 S Martin Luthre King Dr,Chicago,IL 60616,United States"
                 ) +
                 "&output=embed"
               }
@@ -324,7 +329,7 @@ const Torronto = () => {
               {/* Venue details */}
               <div className="flex flex-col gap-1 md:relative md:left-70 text-white">
                 <h3 className="text-lg md:text-xl font-semibold">
-                  Enercare Centre
+                  Chicago's McCormick Place
                 </h3>
                 <p className="text-sm md:text-base flex items-center gap-2 text-gray-300">
                   <img
@@ -332,13 +337,13 @@ const Torronto = () => {
                     alt="location"
                     className="h-4 w-4 opacity-80"
                   />
-                  #1, 100 Princes' Blvd, Toronto, ON M6K 3C3, Canada
+                  2301 S Martin Luthre King Dr,Chicago,IL 60616,United States
                 </p>
               </div>
 
               {/* Get directions button */}
               <a
-                href="https://www.google.com/maps/dir/?api=1&destination=Enercare+Centre,+Toronto"
+                href="https://www.google.com/maps/dir/?api=1&destination=Chicago's+McCormick,+Place+United States"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-[#373737] px-5 py-2 rounded-lg font-bold hover:bg-gray-200 transition flex items-center gap-2 shadow"
@@ -452,4 +457,4 @@ const Torronto = () => {
   );
 };
 
-export default Torronto;
+export default Chicago;
