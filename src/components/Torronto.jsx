@@ -16,19 +16,19 @@ const Torronto = () => {
           {/* Left Image (hidden on mobile) */}
           <div
             className=" md:block w-1/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/torleft.png')" }}
+            style={{ backgroundImage: "url('/pngs/torleft.png')" }}
           ></div>
 
           {/* Center Image */}
           <div
             className="w-full md:w-4/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/tormid.png')" }}
+            style={{ backgroundImage: "url('/pngs/tormid.png')" }}
           ></div>
 
           {/* Right Image (hidden on mobile) */}
           <div
             className=" md:block w-1/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/torright.png')" }}
+            style={{ backgroundImage: "url('/pngs/torright.png')" }}
           ></div>
         </div>
 
@@ -85,14 +85,14 @@ const Torronto = () => {
 
           <div
             className="relative flex-1 bg-black/40 border border-gray-500 p-8 md:p-12 backdrop-blur-sm"
-            style={{ backgroundImage: "url('/middle.png')" }}
+            style={{ backgroundImage: "url('/pngs/middle.png')" }}
           >
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-black/40"></div>
 
             {/* Top-left Logo / Chevron */}
             <div className="absolute top-0 left-0 z-10">
-              <img src="/design.svg" alt="Chevron Logo" height={54} />
+              <img src="/svgs/design.svg" alt="Chevron Logo" height={54} />
             </div>
 
             {/* Content */}
@@ -133,7 +133,7 @@ const Torronto = () => {
           <div className="relative md:w-[240px] border border-gray-500 overflow-hidden">
             {/* Image */}
             <img
-              src="/enercare.png"
+              src="/pngs/enercare.png"
               alt="Enercare Centre"
               className="w-full h-full object-cover"
             />
@@ -144,7 +144,7 @@ const Torronto = () => {
             {/* Top-right Chevron Icon */}
             <div className="absolute top-0 right-0">
               <img
-                src="/design.svg"
+                src="/svgs/design.svg"
                 alt="Decorative Chevron"
                 className="h-26"
               />
@@ -167,11 +167,11 @@ const Torronto = () => {
         <div className="relative mx-auto flex flex-col items-center gap-8 border-2 p-6 w-full max-w-[1200px] rounded-xl">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-20 rounded-xl"
-            style={{ backgroundImage: "url('/gain.png')" }}
+            style={{ backgroundImage: "url('/pngs/gain.png')" }}
           />
           {/* Header */}
           <div className="text-center relative my-6 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16 max-w-3xl">
-            <img src="/design.svg" alt="logo" className="w-20 md:w-[130px]" />
+            <img src="/svgs/design.svg" alt="logo" className="w-20 md:w-[130px]" />
             <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold leading-snug">
               What You’ll Gain <br /> at Enterprise AI Summit 2025
             </h2>
@@ -228,28 +228,28 @@ const Torronto = () => {
             {/* Thumbnail card */}
             <div className="bg-white rounded-lg shadow-md shadow-black overflow-hidden border-2 border-white w-full max-w-sm mx-auto">
               <img
-                src="/enercare.png"
+                src="/pngs/enercare.png"
                 alt="Venue preview"
                 className="w-full h-40 object-cover"
               />
               <div className="flex justify-between items-center px-4 py-3 bg-white">
                 <img
-                  src="/chair.svg"
+                  src="/svgs/chair.svg"
                   alt="Accessible"
                   className="h-6 w-6 opacity-80"
                 />
                 <img
-                  src="/car.svg"
+                  src="/svgs/car.svg"
                   alt="Parking"
                   className="h-6 w-6 opacity-80"
                 />
                 <img
-                  src="/wifi.svg"
+                  src="/svgs/wifi.svg"
                   alt="Wi-Fi"
                   className="h-6 w-6 opacity-80"
                 />
                 <img
-                  src="/train.svg"
+                  src="/svgs/train.svg"
                   alt="Transit"
                   className="h-6 w-6 opacity-80"
                 />
@@ -279,7 +279,7 @@ const Torronto = () => {
               <h3 className="text-lg font-semibold">Enercare Centre</h3>
               <p className="text-sm flex items-center justify-center gap-2 text-gray-300">
                 <img
-                  src="/locationw.svg"
+                  src="/svgs/locationw.svg"
                   alt="location"
                   className="h-4 w-4 opacity-80"
                 />
@@ -292,7 +292,7 @@ const Torronto = () => {
                 className="bg-white text-[#373737] px-5 py-2 rounded-lg font-bold hover:bg-gray-200 transition flex items-center justify-center gap-2 shadow"
               >
                 <img
-                  src="/locationb.svg"
+                  src="/svgs/locationb.svg"
                   alt="directions"
                   className="h-5 w-5"
                 />
@@ -328,7 +328,7 @@ const Torronto = () => {
                 </h3>
                 <p className="text-sm md:text-base flex items-center gap-2 text-gray-300">
                   <img
-                    src="/locationw.svg"
+                    src="/svgs/locationw.svg"
                     alt="location"
                     className="h-4 w-4 opacity-80"
                   />
@@ -344,7 +344,7 @@ const Torronto = () => {
                 className="bg-white text-[#373737] px-5 py-2 rounded-lg font-bold hover:bg-gray-200 transition flex items-center gap-2 shadow"
               >
                 <img
-                  src="/locationb.svg"
+                  src="/svgs/locationb.svg"
                   alt="directions"
                   className="h-5 w-5"
                 />
@@ -355,28 +355,28 @@ const Torronto = () => {
             {/* Thumbnail card (floating bottom-left) */}
             <div className="absolute bottom-6 left-6 bg-white rounded-lg shadow-md shadow-black overflow-hidden border-2 border-white w-56">
               <img
-                src="/enercare.png"
+                src="/pngs/enercare.png"
                 alt="Venue preview"
                 className="w-full h-32 object-cover"
               />
               <div className="flex justify-between items-center px-4 py-3 bg-white">
                 <img
-                  src="/chair.svg"
+                  src="/svgs/chair.svg"
                   alt="Accessible"
                   className="h-6 w-6 opacity-80"
                 />
                 <img
-                  src="/car.svg"
+                  src="/svgs/car.svg"
                   alt="Parking"
                   className="h-6 w-6 opacity-80"
                 />
                 <img
-                  src="/wifi.svg"
+                  src="/svgs/wifi.svg"
                   alt="Wi-Fi"
                   className="h-6 w-6 opacity-80"
                 />
                 <img
-                  src="/train.svg"
+                  src="/svgs/train.svg"
                   alt="Transit"
                   className="h-6 w-6 opacity-80"
                 />
@@ -430,7 +430,7 @@ const Torronto = () => {
               <p className="text-2xl text-center font-semibold sm:text-2xl text-white mb-6">
                 Secure your seats through Stage-X
               </p>
-              <button className="px-6 py-1 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold text-white text-lg shadow-md transition">
+              <button className="px-6 py-2 bg-gradient-to-r from-[#60A5FA] to-[#396294] rounded-lg font-semibold text-white text-lg shadow-md transition shadow-xl/30 shadow-[#396294]">
                 Register now
               </button>
             </div>

@@ -11,7 +11,7 @@ const sessions = [
     headline: "AI & Automation Pioneer & Global Keynote Speaker",
     description:
       "Pascal Bornet is a globally recognized authority on intelligent automation and human-centric AI. With 20+ years of leadership at McKinsey and EY, he helped shape global automation practices and led hundreds of enterprise transformations worldwide. As the bestselling author of Intelligent Automation and Agentic Artificial Intelligence, Pascal’s work explores how AI can elevate, not replace human potential. A frequent keynote speaker and lecturer, his insights appear in Forbes, Bloomberg and the Financial Times.",
-    image: "/pascal.png",
+    image: "/pngs/pascal.png",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const sessions = [
     headline: "Global AI Advisor & Former AWS AI/ML Leader ",
     description:
       "Allie K. Miller is one of the most influential voices in the AI business, advising organizations like OpenAI, Salesforce, Google and Samsung on enterprise AI transformation. A former AI leader at Amazon and IBM, she’s known for launching pioneering programs, including AWS's global ML startup business and IBM’s first multimodal AI team. With deep expertise across ML, product strategy and venture ecosystems, Allie also teaches AI on MasterClass and has been featured in Forbes, WSJ and Fortune.",
-    image: "/allie.png",
+    image: "/pngs/allie.png",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const sessions = [
     headline: "Former Chief Decision Scientist-Google ",
     description:
       "Cassie Kozyrkov is the founder of Decision Intelligence and one of the most trusted voices in AI strategy. As Google’s former Chief Decision Scientist, she helped over 500 teams implement data-driven practices and personally trained 20,000 Googlers in AI, analytics and high-stakes decision-making. Now CEO of Data Scientific, Cassie advises global organizations like NASA, Gucci and Lenovo on building AI systems that empower human judgment. With a half-million followers and millions of readers worldwide, she blends technical depth with humor and clarity.",
-    image: "/elipse.png",
+    image: "/pngs/elipse.png",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const sessions = [
     headline: "Award-Winning Product & Engineering Leader",
     description:
       "Rama Akkiraju is one of the world’s most accomplished AI innovators, known for delivering enterprise-grade AI solutions at scale. A former IBM Fellow and CTO of Watson AI Ops, she led teams of 600+ engineers to build self-healing IT systems, advanced NLU platforms, and emotion-aware AI services that have served billions of API calls globally. With over 75 patents, 100+ publications and multiple global awards, Rama’s work spans natural language processing, enterprise AI architecture and human-machine collaboration",
-    image: "/rama.png",
+    image: "/pngs/rama.png",
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const sessions = [
     headline: "Futurist & Founder-WAYE",
     description:
       "Sinead Bovell is a futurist and leading voice on the societal impact of artificial intelligence. As the founder of WAYE, she prepares leaders and organizations for a future shaped by emerging technologies. She advises Fortune 500 executives, governments and UN bodies on AI policy, national security, and education reform. An 11-time United Nations speaker and SXSW headliner, Sinead is known for making complex tech accessible to global audiences. Her insights on AI and the future of work have reached 17,000+ policymakers and educators worldwide. ",
-    image: "/shine.png",
+    image: "/pngs/shine.png",
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ const sessions = [
     headline: "#1 Futurist, Forbes ",
     description:
       "Jonathan Brill is ranked the world’s #1 futurist by Forbes and is widely regarded as a leading voice on innovation strategy and transformation. Formerly Global Futurist at HP and a trusted advisor to Fortune 50 giants, Jonathan helps executives and governments anticipate disruption, leverage AI and build future-ready organizations. His bestselling book Rogue Waves is considered essential reading for navigating complex change. ",
-    image: "/jon.png",
+    image: "/pngs/jon.png",
   },
   {
     id: 7,
@@ -77,7 +77,7 @@ const sessions = [
     headline: "CEO-Humane Intelligence",
     description:
       "Dr. Rumman Chowdhury is a leading voice in responsible AI, with deep expertise in algorithmic fairness, governance and transparency. As CEO of Humane Intelligence and a Responsible AI Fellow at Harvard’s Berkman Klein Center, she develops open, socio-technical solutions to mitigate harms from automated systems. Previously, she led Twitter’s META team and pioneered algorithmic audit tools as founder of Parity and Global Lead for Responsible AI at Accenture.",
-    image: "/rum.png",
+    image: "/pngs/rum.png",
   },
 ];
 
@@ -126,7 +126,7 @@ const SessionCards = () => {
                 {/* Right Design SVG (absolute) */}
                 <div className="absolute top-0 right-0  flex items-start justify-end">
                   <img
-                    src="/design.svg"
+                    src="/svgs/design.svg"
                     alt="design"
                     className="h-full object-contain"
                   />
@@ -159,19 +159,19 @@ const Speakers = () => {
           {/* Left Image (hidden on mobile) */}
           <div
             className=" md:block w-1/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/speakleft.png')" }}
+            style={{ backgroundImage: "url('/pngs/speakleft.png')" }}
           ></div>
 
           {/* Center Image */}
           <div
             className="w-full md:w-4/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/speakcenter.png')" }}
+            style={{ backgroundImage: "url('/pngs/speakcenter.png')" }}
           ></div>
 
           {/* Right Image (hidden on mobile) */}
           <div
             className=" md:block w-1/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/speakright.png')" }}
+            style={{ backgroundImage: "url('/pngs/speakright.png')" }}
           ></div>
         </div>
 
@@ -217,7 +217,7 @@ const Speakers = () => {
       {/* two */}
       <section
         className="relative w-full rounded-lg overflow-hidden bg-cover bg-center"
-        style={{ backgroundImage: "url('/speakcenter.png')" }}
+        style={{ backgroundImage: "url('/pngs/speakcenter.png')" }}
       >
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-[#131313a3]" />

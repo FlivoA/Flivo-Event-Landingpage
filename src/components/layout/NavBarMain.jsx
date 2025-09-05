@@ -18,7 +18,7 @@ const NavBarMain = () => {
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="/flivo.png" alt="Logo" height={134} width={144} />
+          <img src="/pngs/flivo.png" alt="Logo" height={134} width={144} />
         </div>
 
         {/* Desktop Nav Links */}

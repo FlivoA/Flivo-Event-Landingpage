@@ -44,7 +44,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
         {/* Logo + About */}
         <div>
-          <img src="/flivo.png" alt="Flivo.ai Logo" className="h-10 mb-4" />
+          <img src="/pngs/flivo.png" alt="Flivo.ai Logo" className="h-10 mb-4" />
           <h2 className="text-xl font-bold text-white">
             Enterprise AI Summit 2025
           </h2>
@@ -55,7 +55,7 @@ export const Footer = () => {
           </p>
           <div className="mt-4">
             <a href="https://www.linkedin.com/company/flivo-ai" className="">
-              <img src="/linkedin1.svg" alt="LinkedIn" className="h-10 w-10" />
+              <img src="/svgs/linkedin1.svg" alt="LinkedIn" className="h-10 w-10" />
             </a>
           </div>
         </div>
@@ -130,15 +130,15 @@ export const Footer = () => {
           <h3 className="text-white font-bold text-xl mb-3">Contact</h3>
           <ul className="space-y-2 text-sm">
             <li className="flex items-center gap-2 text-base">
-              <img src="/mail.svg" alt="email" className="h-6 w-6" />
+              <img src="/svgs/mail.svg" alt="email" className="h-6 w-6" />
               connect@flivo.us
             </li>
             <li className="flex items-center gap-2 text-base">
-              <img src="/phone.svg" alt="phone" className="h-6 w-6" />
+              <img src="/svgs/phone.svg" alt="phone" className="h-6 w-6" />
               +1 (703) 543-995
             </li>
             <li className="flex items-center gap-2 text-base">
-              <img src="/location.svg" alt="location" className="h-6 w-6" />
+              <img src="/svgs/location.svg" alt="location" className="h-6 w-6" />
               Location
             </li>
           </ul>

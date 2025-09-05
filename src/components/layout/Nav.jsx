@@ -10,7 +10,7 @@ const Nav = () => {
     <nav className="fixed top-0 left-0 w-full z-50 text-white p-2 px-6  bg-[#00000072] ">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <img src="/flivo.png" alt="Logo" className="h-10 w-auto" />
+        <img src="/pngs/flivo.png" alt="Logo" className="h-10 w-auto" />
 
         {/* Desktop Links */}
         <div className="hidden md:flex gap-20 font-semibold text-lg">

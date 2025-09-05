@@ -94,7 +94,7 @@ const ScheduleCard = ({ item }) => {
 
         {/* Clock icon */}
         <img
-          src="/clock.svg"
+          src="/svgs/clock.svg"
           alt="clock image"
           className="h-14 md:h-22 absolute bottom-0 left-0"
         />
@@ -109,7 +109,7 @@ const ScheduleCard = ({ item }) => {
       {/* right */}
       <div
         className="relative border-r-1 border-t-1 border-b-1 w-full  bg-cover bg-center max-h-[140px] md:min-h-[150px] md:max-w-[900px] flex md:h-20 text-white rounded-r-2xl overflow-hidden"
-        style={{ backgroundImage: "url('/three.png')" }}
+        style={{ backgroundImage: "url('/pngs/three.png')" }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/70" />
@@ -138,19 +138,19 @@ const Agenda = () => {
           {/* Left Image (hidden on mobile) */}
           <div
             className=" md:block w-1/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/agendaleft.png')" }}
+            style={{ backgroundImage: "url('/pngs/agendaleft.png')" }}
           ></div>
 
           {/* Center Image */}
           <div
             className="w-full md:w-4/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/agendacenter.png')" }}
+            style={{ backgroundImage: "url('/pngs/agendacenter.png')" }}
           ></div>
 
           {/* Right Image (hidden on mobile) */}
           <div
             className=" md:block w-1/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/agnedaright.png')" }}
+            style={{ backgroundImage: "url('/pngs/agendaright.png')" }}
           ></div>
         </div>
 
@@ -206,13 +206,13 @@ const Agenda = () => {
           {/*  content top */}
           <div
             className="relative  bg-cover bg-center flex items-center justify-center text-center border border-white"
-            style={{ backgroundImage: "url('/agenda.png')" }}
+            style={{ backgroundImage: "url('/pngs/agenda.png')" }}
           >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/80" />
 
             <img
-              src="/design.svg"
+              src="/svgs/design.svg"
               alt="logo"
               className=" top-0 md:top-20 md:h-50 absolute md:left-20 h-16 left-0 "
             />
@@ -238,7 +238,7 @@ const Agenda = () => {
 
             <div
               className="relative flex-1 bg-black/40 border border-gray-500 bg-cover bg-center p-8 md:p-12 backdrop-blur-sm"
-              style={{ backgroundImage: "url('/agendaleft.png')" }}
+              style={{ backgroundImage: "url('/pngs/agendaleft.png')" }}
             >
               {/* Dark Overlay */}
               <div className="absolute inset-0 bg-black/80"></div>
@@ -246,7 +246,7 @@ const Agenda = () => {
               {/* Top-left Logo / Chevron */}
               <div className="hidden md:block md:absolute md:top-30 md:left-0 md:z-10">
                 <img
-                  src="/design.svg"
+                  src="/svgs/design.svg"
                   alt="Chevron Logo"
                   className="h-20 md:h-40"
                 />
@@ -274,7 +274,7 @@ const Agenda = () => {
             <div className="relative md:w-[240px] border border-gray-500 overflow-hidden">
               {/* Image */}
               <img
-                src="/enercare.png"
+                src="/pngs/enercare.png"
                 alt="Enercare Centre"
                 className="w-full h-full object-cover"
               />
@@ -285,7 +285,7 @@ const Agenda = () => {
               {/* Top-right Chevron Icon */}
               <div className="absolute top-0 right-0">
                 <img
-                  src="/design.svg"
+                  src="/svgs/design.svg"
                   alt="Decorative Chevron"
                   className="h-26"
                 />
@@ -308,7 +308,7 @@ const Agenda = () => {
       {/* three */}
       <section
         className="relative p-4 w-full bg-cover bg-center text-white"
-        style={{ backgroundImage: "url('/agendamid.png')" }}
+        style={{ backgroundImage: "url('/pngs/agendamid.png')" }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/60" />
@@ -320,7 +320,7 @@ const Agenda = () => {
             </p>
             <p className="font-bold text-xl md:text-4xl">August 24, 2025</p>
             <img
-              src="/design.svg"
+              src="/svgs/design.svg"
               alt="logo"
               className="absolute h-12 md:h-16 right-0 top-0"
             />
@@ -338,7 +338,7 @@ const Agenda = () => {
             <p className="text-white font-semibold text-2xl px-4">
               Download Full Agenda
             </p>
-            <img src="/download.svg" alt="download" className="h-7" />
+            <img src="/svgs/download.svg" alt="download" className="h-7" />
           </div>
         </div>
       </section>
@@ -346,7 +346,7 @@ const Agenda = () => {
       {/* four */}
       <section
         className="relative w-full bg-cover bg-center text-white py-12 px-4 flex items-center justify-center"
-        style={{ backgroundImage: "url('/torright.png')" }}
+        style={{ backgroundImage: "url('/pngs/torright.png')" }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/70" />
@@ -355,7 +355,7 @@ const Agenda = () => {
         <div className="relative border border-white/30 backdrop-blur-md flex flex-col items-center text-center w-full max-w-5xl px-6 py-10 rounded-xl">
           {/* Logo */}
           <img
-            src="/flivo.png"
+            src="/pngs/flivo.png"
             alt="flivo logo"
             className="h-12 md:h-16 lg:h-20 mb-6"
           />

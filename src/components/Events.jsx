@@ -249,7 +249,7 @@ const EventCard = ({ bgImage, title, subtitle, cardArray }) => {
                   >
                     <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-around p-2">
                       <img
-                        src="/design.svg"
+                        src="/svgs/design.svg"
                         alt="logo"
                         height={30}
                         width={30}
@@ -294,7 +294,7 @@ const Events = () => {
       <div className="relative z-10 flex flex-col p-4 sm:p-6 lg:p-8">
         {/* Search Bar */}
         <div className="flex items-center gap-2 px-3 py-2 w-full sm:max-w-[300px] bg-[#0F0F0F] text-[#4B5563] border-1 border-[#4B5563] rounded mb-4">
-          <img src="/glass.svg" alt="search" height={15} width={15} />
+          <img src="/svgs/glass.svg" alt="search" height={15} width={15} />
           <div className="border-l-2 border-[#4B5563] h-4" />
           <input
             type="text"
@@ -312,12 +312,12 @@ const Events = () => {
             backgroundPosition: "center",
           }}
         >
-          <img src="/flivo.png" alt="Flivo Logo" className="h-10 sm:h-20" />
+          <img src="/pngs/flivo.png" alt="Flivo Logo" className="h-10 sm:h-20" />
           <h1 className="text-white text-2xl sm:text-4xl md:text-5xl font-black text-center">
             FLIVO AI EVENTS
           </h1>
           <img
-            src="/design.svg"
+            src="/svgs/design.svg"
             height={70}
             width={40}
             alt="Icon"
