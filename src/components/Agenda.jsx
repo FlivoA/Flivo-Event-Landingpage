@@ -1,100 +1,76 @@
 import React from "react";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Footer from "./layout/Footer";
+import Nav from "./layout/Nav";
 
 const scheduleData = [
   {
-    start: "09:00",
-    end: "09:30",
-    am: "AM",
-    pm: "PM",
+    start: "09:00 AM",
+    end: "09:30 AM",
     description: "Check-in & Coffee Networking",
   },
   {
-    start: "09:30",
-    end: "09:45",
-    am: "AM",
-    pm: "PM",
+    start: "09:30 AM",
+    end: "09:45 AM",
     title: "Keynote",
     subtitle: "Opening Host",
     description: "Welcome Address: The Rise of Strategic AI Agents",
   },
   {
-    start: "09:45",
-    end: "10:30",
-    am: "AM",
-    pm: "PM",
+    start: "09:45 AM",
+    end: "10:30 AM",
     title: "Panel",
     description: "AI in the Boardroom: Driving $3 Trillion in Value",
   },
   {
-    start: "10:30",
-    end: "11:15",
-    am: "AM",
-    pm: "PM",
+    start: "10:30 AM",
+    end: "11:15 AM",
     title: "Keynote",
     description: "The Trust Factor: Ethics, Data & Responsible AI",
   },
   {
-    start: "11:15",
-    end: "11:30",
-    am: "AM",
-    pm: "PM",
+    start: "11:15 AM",
+    end: "11:30 AM",
     description: "Tea Break & Exhibitor Demos",
   },
   {
-    start: "11:30",
-    end: "12:15",
-    am: "AM",
-    pm: "PM",
+    start: "11:30 AM",
+    end: "12:15 PM",
     title: "Workshop",
     description: "Prompt Engineering for Enterprise Workflows",
   },
   {
-    start: "12:15",
-    end: "01:00",
-    am: "AM",
-    pm: "PM",
+    start: "12:15 PM",
+    end: "01:00 PM",
     title: "Fireside Chat",
     description: "AI + Health = Futureproof",
   },
   {
-    start: "01:00",
-    end: "02:00",
-    am: "AM",
-    pm: "PM",
+    start: "01:00 PM",
+    end: "02:00 PM",
     title: "Workshop",
     description: "Networking Lunch & VIP Lounge Opens (Invite Only)",
   },
   {
-    start: "02:00",
-    end: "02:45",
-    am: "AM",
-    pm: "PM",
+    start: "02:00 PM",
+    end: "02:45 PM",
     title: "Keynote",
     description: "Deep Learning, Real Impact: From MVPs to Billion Dollar Ops",
   },
   {
-    start: "02:45",
-    end: "03:30",
-    am: "AM",
-    pm: "PM",
+    start: "02:45 PM",
+    end: "03:30 PM",
     title: "Panel",
     description: "Founders in AI: Building the Next Unicorn",
   },
   {
-    start: "03:30",
-    end: "04:00",
-    am: "AM",
-    pm: "PM",
+    start: "03:30 PM",
+    end: "04:00 PM",
     title: "Spotlight talk",
     description: "AGI or Hype? Inside DeepMind's Long Game",
   },
   {
-    start: "04:00",
-    end: "05:00",
-    am: "AM",
-    pm: "PM",
+    start: "04:00 PM",
+    end: "05:00 PM",
     description: "Open Networking & Final Product Demos & Investor Lounge",
   },
 ];
@@ -106,19 +82,19 @@ const ScheduleCard = ({ item }) => {
       <div className="bg-[#2A2A2A] min-h-[170px] md:min-h-[200px] text-[#F8FAFC] rounded-2xl flex flex-col relative">
         <div className="flex items-center gap-3 p-3 ">
           <div className="flex flex-col items-center">
-            <p className="text-xl md:text-4xl font-bold">{item.start}</p>
-            <p className="text-sm md:text-xl">{item.am}</p>
+            <p className="text-xl md:text-4xl font-bold">{item.start.split(" ")[0]}</p>
+            <p className="text-sm md:text-xl">{item.start.split(" ")[1]}</p>
           </div>
           <p className="text-5xl">-</p>
           <div className="flex flex-col items-center">
-            <p className="text-xl md:text-4xl font-bold">{item.end}</p>
-            <p className="text-sm md:text-xl">{item.am}</p>
+            <p className="text-xl md:text-4xl font-bold">{item.end.split(" ")[0]}</p>
+            <p className="text-sm md:text-xl">{item.end.split(" ")[1]}</p>
           </div>
         </div>
 
         {/* Clock icon */}
         <img
-          src="/clock.svg"
+          src="/svgs/clock.svg"
           alt="clock image"
           className="h-14 md:h-22 absolute bottom-0 left-0"
         />
@@ -133,7 +109,7 @@ const ScheduleCard = ({ item }) => {
       {/* right */}
       <div
         className="relative border-r-1 border-t-1 border-b-1 w-full  bg-cover bg-center max-h-[140px] md:min-h-[150px] md:max-w-[900px] flex md:h-20 text-white rounded-r-2xl overflow-hidden"
-        style={{ backgroundImage: "url('/three.png')" }}
+        style={{ backgroundImage: "url('/pngs/three.png')" }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/70" />
@@ -145,6 +121,7 @@ const ScheduleCard = ({ item }) => {
     </div>
   );
 };
+
 
 const Agenda = () => {
   return (
@@ -161,19 +138,19 @@ const Agenda = () => {
           {/* Left Image (hidden on mobile) */}
           <div
             className=" md:block w-1/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/agendaleft.png')" }}
+            style={{ backgroundImage: "url('/pngs/agendaleft.png')" }}
           ></div>
 
           {/* Center Image */}
           <div
             className="w-full md:w-4/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/agendacenter.png')" }}
+            style={{ backgroundImage: "url('/pngs/agendacenter.png')" }}
           ></div>
 
           {/* Right Image (hidden on mobile) */}
           <div
             className=" md:block w-1/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/agnedaright.png')" }}
+            style={{ backgroundImage: "url('/pngs/agendaright.png')" }}
           ></div>
         </div>
 
@@ -229,13 +206,13 @@ const Agenda = () => {
           {/*  content top */}
           <div
             className="relative  bg-cover bg-center flex items-center justify-center text-center border border-white"
-            style={{ backgroundImage: "url('/agenda.png')" }}
+            style={{ backgroundImage: "url('/pngs/agenda.png')" }}
           >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/80" />
 
             <img
-              src="/design.svg"
+              src="/svgs/design.svg"
               alt="logo"
               className=" top-0 md:top-20 md:h-50 absolute md:left-20 h-16 left-0 "
             />
@@ -261,7 +238,7 @@ const Agenda = () => {
 
             <div
               className="relative flex-1 bg-black/40 border border-gray-500 bg-cover bg-center p-8 md:p-12 backdrop-blur-sm"
-              style={{ backgroundImage: "url('/agendaleft.png')" }}
+              style={{ backgroundImage: "url('/pngs/agendaleft.png')" }}
             >
               {/* Dark Overlay */}
               <div className="absolute inset-0 bg-black/80"></div>
@@ -269,7 +246,7 @@ const Agenda = () => {
               {/* Top-left Logo / Chevron */}
               <div className="hidden md:block md:absolute md:top-30 md:left-0 md:z-10">
                 <img
-                  src="/design.svg"
+                  src="/svgs/design.svg"
                   alt="Chevron Logo"
                   className="h-20 md:h-40"
                 />
@@ -297,7 +274,7 @@ const Agenda = () => {
             <div className="relative md:w-[240px] border border-gray-500 overflow-hidden">
               {/* Image */}
               <img
-                src="/enercare.png"
+                src="/pngs/enercare.png"
                 alt="Enercare Centre"
                 className="w-full h-full object-cover"
               />
@@ -308,7 +285,7 @@ const Agenda = () => {
               {/* Top-right Chevron Icon */}
               <div className="absolute top-0 right-0">
                 <img
-                  src="/design.svg"
+                  src="/svgs/design.svg"
                   alt="Decorative Chevron"
                   className="h-26"
                 />
@@ -331,7 +308,7 @@ const Agenda = () => {
       {/* three */}
       <section
         className="relative p-4 w-full bg-cover bg-center text-white"
-        style={{ backgroundImage: "url('/agendamid.png')" }}
+        style={{ backgroundImage: "url('/pngs/agendamid.png')" }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/60" />
@@ -343,7 +320,7 @@ const Agenda = () => {
             </p>
             <p className="font-bold text-xl md:text-4xl">August 24, 2025</p>
             <img
-              src="/design.svg"
+              src="/svgs/design.svg"
               alt="logo"
               className="absolute h-12 md:h-16 right-0 top-0"
             />
@@ -361,7 +338,7 @@ const Agenda = () => {
             <p className="text-white font-semibold text-2xl px-4">
               Download Full Agenda
             </p>
-            <img src="/download.svg" alt="download" className="h-7" />
+            <img src="/svgs/download.svg" alt="download" className="h-7" />
           </div>
         </div>
       </section>
@@ -369,7 +346,7 @@ const Agenda = () => {
       {/* four */}
       <section
         className="relative w-full bg-cover bg-center text-white py-12 px-4 flex items-center justify-center"
-        style={{ backgroundImage: "url('/torright.png')" }}
+        style={{ backgroundImage: "url('/pngs/torright.png')" }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/70" />
@@ -378,7 +355,7 @@ const Agenda = () => {
         <div className="relative border border-white/30 backdrop-blur-md flex flex-col items-center text-center w-full max-w-5xl px-6 py-10 rounded-xl">
           {/* Logo */}
           <img
-            src="/flivo.png"
+            src="/pngs/flivo.png"
             alt="flivo logo"
             className="h-12 md:h-16 lg:h-20 mb-6"
           />

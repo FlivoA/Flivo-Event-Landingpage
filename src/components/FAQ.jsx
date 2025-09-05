@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Footer from "./layout/Footer";
+import Nav from "./layout/Nav";
 
 const faqs = [
   {
@@ -66,11 +66,11 @@ const FlipCard = ({ question, answer }) => {
         {/* Front */}
         <div
           className="absolute border-2 rounded-2xl  inset-0 bg-cover bg-center overflow-hidden text-white flex flex-col items-center justify-center backface-hidden"
-          style={{ backgroundImage: "url('/cardbg.png')" }}
+          style={{ backgroundImage: "url('/pngs/cardbg.png')" }}
         >
           <div className="absolute inset-0 bg-black/70 rounded-xl" />
           <img
-            src="/design.svg"
+            src="/svgs/design.svg"
             alt="logo"
             className="absolute top-4 right-4 h-8"
           />
@@ -82,11 +82,11 @@ const FlipCard = ({ question, answer }) => {
         {/* Back */}
         <div
           className="absolute inset-0 bg-cover bg-center border-2 rounded-2xl overflow-hidden text-white flex items-center justify-center backface-hidden rotate-y-180"
-          style={{ backgroundImage: "url('/cardbg.png')" }}
+          style={{ backgroundImage: "url('/pngs/cardbg.png')" }}
         >
           <div className="absolute inset-0 bg-black/70 rounded-xl" />
           <img
-            src="/design.svg"
+            src="/svgs/design.svg"
             alt="logo"
             className="absolute top-4 right-4 h-8"
           />
@@ -114,19 +114,19 @@ const FAQ = () => {
           {/* Left Image (hidden on mobile) */}
           <div
             className=" md:block w-1/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/faqleft.png')" }}
+            style={{ backgroundImage: "url('/pngs/faqleft.png')" }}
           ></div>
 
           {/* Center Image */}
           <div
             className="w-full md:w-4/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/faqmid.png')" }}
+            style={{ backgroundImage: "url('/pngs/faqmid.png')" }}
           ></div>
 
           {/* Right Image (hidden on mobile) */}
           <div
             className=" md:block w-1/6 bg-cover bg-center"
-            style={{ backgroundImage: "url('/faqright.png')" }}
+            style={{ backgroundImage: "url('/pngs/faqright.png')" }}
           ></div>
         </div>
 
@@ -172,7 +172,7 @@ const FAQ = () => {
       {/* two */}
       <section
         className="relative p-4 w-full bg-cover bg-center text-white"
-        style={{ backgroundImage: "url('/faqright.png')" }}
+        style={{ backgroundImage: "url('/pngs/faqright.png')" }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/80" />
@@ -203,7 +203,7 @@ const FAQ = () => {
       <section
         className="relative w-full flex items-center justify-center text-white py-16"
         style={{
-          backgroundImage: "url('/torright.png')",
+          backgroundImage: "url('/pngs/torright.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -253,7 +253,7 @@ const FAQ = () => {
           {/* Logo & Event Info */}
           <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
             <img
-              src="/flivo.png"
+              src="/pngs/flivo.png"
               alt="Flivo Logo"
               className="h-16 md:h-24 mb-6"
             />
