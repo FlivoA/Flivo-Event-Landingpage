@@ -151,9 +151,9 @@ const Chicago = () => {
 
             {/* Bottom Text */}
             <div className="absolute bottom-0 left-0 right-0 p-4">
-              <h3 className="font-bold text-2xl text-white">Chicago's McCormick Place</h3>
+              <h3 className="font-bold text-2xl text-white">McCormick Place</h3>
               <p className="text-sm font-medium text-[#F8FAFC]">
-               McCormick Place in Chicago, United States
+               Convention center chicago,llinois
               </p>
             </div>
           </div>

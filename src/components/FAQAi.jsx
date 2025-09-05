@@ -184,7 +184,7 @@ const FAQAi = () => {
               Frequently Asked Questions
             </p>
             <p className="font-semibold text-lg md:text-2xl max-w-[900px] mx-auto">
-              Everything you need to know before arriving in San Francisco for
+              Everything you need to know before arriving in Chicago for
               the Enterprise AI Summit 2025.
             </p>
           </div>
